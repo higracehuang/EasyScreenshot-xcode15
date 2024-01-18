@@ -12,6 +12,7 @@
 		068510A22B5869F2009B2488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068510A12B5869F2009B2488 /* Assets.xcassets */; };
 		068510A52B5869F2009B2488 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068510A42B5869F2009B2488 /* Preview Assets.xcassets */; };
 		068510AD2B586B5F009B2488 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068510AC2B586B5F009B2488 /* AppDelegate.swift */; };
+		068510B12B58C8AE009B2488 /* ScreenCaptureUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068510B02B58C8AE009B2488 /* ScreenCaptureUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		068510A42B5869F2009B2488 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		068510A62B5869F2009B2488 /* EasyScreenshot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EasyScreenshot.entitlements; sourceTree = "<group>"; };
 		068510AC2B586B5F009B2488 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		068510B02B58C8AE009B2488 /* ScreenCaptureUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCaptureUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				0685109D2B5869EF009B2488 /* EasyScreenshotApp.swift */,
+				068510B02B58C8AE009B2488 /* ScreenCaptureUtil.swift */,
 				0685109F2B5869EF009B2488 /* ContentView.swift */,
 				068510AC2B586B5F009B2488 /* AppDelegate.swift */,
 				068510A12B5869F2009B2488 /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				068510B12B58C8AE009B2488 /* ScreenCaptureUtil.swift in Sources */,
 				068510AD2B586B5F009B2488 /* AppDelegate.swift in Sources */,
 				068510A02B5869EF009B2488 /* ContentView.swift in Sources */,
 				0685109E2B5869EF009B2488 /* EasyScreenshotApp.swift in Sources */,
