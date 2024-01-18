@@ -70,14 +70,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   }
   
   @objc private func actionCaptureEntireScreen(_ sender: Any?) {
-    
+    ScreenCaptureUtil.screenshot(type: .EntireScreen)
   }
   
   @objc private func actionSelectArea(_ sender: Any?) {
-    
+    ScreenCaptureUtil.screenshot(type: .UserSelection)
   }
   
   @objc private func actionCaptureWindow(_ sender: Any?) {
-    
+    ScreenCaptureUtil.screenshot(type: .Window)
   }
 }
