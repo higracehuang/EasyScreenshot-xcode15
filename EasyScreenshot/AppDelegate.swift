@@ -18,7 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     /// Creating menu item: area capture
     let itemSelectArea = NSMenuItem(
       title: "Select an area",
-      action: #selector(Self.actionSelectArea(_:)),
+      action: #selector(self.actionSelectArea),
       keyEquivalent: "")
     itemSelectArea.image = NSImage(
       systemSymbolName: "rectangle.dashed",
@@ -30,7 +30,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     /// Creating menu item: entire screen capture
     let itemCaptureEntireScreen = NSMenuItem(
       title: "Screenshot the entire screen",
-      action: #selector(Self.actionCaptureEntireScreen(_:)),
+      action: #selector(self.actionCaptureEntireScreen),
       keyEquivalent: "")
     itemCaptureEntireScreen.image = NSImage(
       systemSymbolName: "macwindow.on.rectangle",
@@ -42,7 +42,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     /// Creating menu item: window capture
     let itemCaptureWindow = NSMenuItem(
       title: "Capture a window",
-      action: #selector(self.actionCaptureWindow(_:)),
+      action: #selector(self.actionCaptureWindow),
       keyEquivalent: "")
     itemCaptureWindow.image = NSImage(
       systemSymbolName: "macwindow",
@@ -57,7 +57,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     /// Creating menu item:  quit the app
     let itemQuit = NSMenuItem(
       title: "Quit EasyScreenshot",
-      action: #selector(self.actionExitApp(_:)),
+      action: #selector(self.actionExitApp),
       keyEquivalent: "")
     itemQuit.target = self
     mainMenu.addItem(itemQuit)
@@ -65,19 +65,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     statusBarItem?.menu = mainMenu
   }
   
-  @objc private func actionExitApp(_ sender: Any?) {
+  @objc private func actionExitApp() {
     NSApp.terminate(self)
   }
   
-  @objc private func actionCaptureEntireScreen(_ sender: Any?) {
+  @objc private func actionCaptureEntireScreen() {
     ScreenCaptureUtil.screenshot(type: .EntireScreen)
   }
   
-  @objc private func actionSelectArea(_ sender: Any?) {
+  @objc private func actionSelectArea() {
     ScreenCaptureUtil.screenshot(type: .UserSelection)
   }
   
-  @objc private func actionCaptureWindow(_ sender: Any?) {
+  @objc private func actionCaptureWindow() {
     ScreenCaptureUtil.screenshot(type: .Window)
   }
 }
